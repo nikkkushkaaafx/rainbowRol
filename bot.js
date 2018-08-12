@@ -1,19 +1,25 @@
-##REPLACE THESE VALUES
-bot_key="PlAcEhOlDeR"
-default_role="RAINBOW"
+default_role="rainbow"
 ##--------------------
 import discord
 import asyncio
 from time import sleep
 from colorsys import hls_to_rgb
+
+
+
 client = discord.Client()
 dothething = {}
+
+bot_key = "NDc4MTM4Mzg1MDk4MDgwMjU3.DlGUyg.UD9j4UoqUS3-onRXbeTG2vbrexs"
+
 @client.event
 async def on_ready():
         print('Logged in as')
         print(client.user.name)
         print(client.user.id)
         print('------')
+      
+      
 @client.event
 async def on_message(message):
         global dothething
